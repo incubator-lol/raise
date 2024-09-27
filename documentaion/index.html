@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gittu - Documentation</title>
+
+    <!-- Favicon included -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- Apple touch icon included -->
+    <link rel="apple-touch-icon" href="./assets/images/logo/favicon.ico" />
+
+    <!-- All css links -->
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- sidebar section start -->
+    <aside class="sidebar-section">
+      <div class="sidebar-logo">
+        <a href="index.html">
+          <img src="./assets/images/logo/logo.png" alt="Logo" />
+        </a>
+      </div>
+      <nav class="sidebar-nav">
+        <ul class="sidebar-menu">
+          <li><a href="#welcome">Welcome</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="#pages">Pages</a></li>
+          <li><a href="#font">Fonts</a></li>
+          <li><a href="#theme-styles">Theme Styles</a></li>
+          <li><a href="#web3-settings">Web3 Settings</a></li>
+          <li><a href="#video-tutorial">Video Tutorial</a></li>
+          <li><a href="#contract-config">Contract configuration</a></li>
+          <li><a href="#deploy">Deploy</a></li>
+          <li><a href="#custom-page">Custom Page</a></li>
+          <li><a href="#credit">Source and Credit</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- sidebar section end -->
+
+    <!-- main wrapper section start -->
+    <div class="main-wrapper">
+      <div class="main-container">
+        <section id="welcome" class="ptb-50">
+          <div class="section-title">
+            <h1>
+              Gittu - ICO/IDO/IGO Token Presale Template With Smart Contract
+              (React JS+Solidity)
+            </h1>
+          </div>
+
+          <div class="support-item mb-30">
+            <a href="https://themeforest.net/user/uigigs" target="_blank">
+              24/7 Support: Send Us a message from our profile
+            </a>
+          </div>
+
+          <div class="view-card">
+            <h3 class="fw-400">
+              Thank you for purchasing our template. This documentation file
+              covers all the information needed to install and use this theme.
+              So before you get started, please check out these documentation
+              files carefully. If you have any problem with understanding
+              anything in the documentation and about installing theme, please
+              contact directly from our themeforest account. Our support team
+              always ready to help you quickly.
+            </h3>
+          </div>
+        </section>
+
+        <section id="overview" class="ptb-50">
+          <div class="section-title">
+            <h2>Overview</h2>
+          </div>
+
+          <h3>How to buy token using our template</h3>
+          <iframe
+            class="video-item mb-20"
+            src="https://www.youtube.com/embed/nJqR8aaDjoA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
+            allowfullscreen
+          >
+          </iframe>
+        </section>
+
+        <section id="installation" class="ptb-50">
+          <div class="section-title">
+            <h2>Template Installation</h2>
+          </div>
+          <p>You will get <strong>Gittu.zip</strong> file form Themeforest.</p>
+          <ul class="steps-list mb-30">
+            <li>Unzip <strong>Gittu.zip</strong> file.</li>
+            <li>
+              You will get two files
+              <ul class="ml-20">
+                <li>documentation</li>
+                <li>gittu_react_main</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h3>Gittu react version installation</h3>
+
+          <ul class="steps-list mb-30">
+            <li>
+              Open the folder <strong>gittu_react_main</strong> with code editor
+            </li>
+            <li>Open terminal of the code editor</li>
+            <li>
+              run <code>npm install</code> on terminal
+              <p>
+                ( It takes some times for installing dependencies of npm
+                according to your internet speed. )
+              </p>
+            </li>
+            <li>run <code>npm run dev</code> on terminal</li>
+            <li>
+              Then , please go to address <code>localhost:3000</code> on your
+              browser and You will find default landing page.
+            </li>
+          </ul>
+
+          <h4>
+            If node.js is not installed in you local machine then please
+            consider to download it form node js official website here:
+            <a href="https://nodejs.org/en" target="_blank">Node.js</a>
+          </h4>
+
+          <h4>
+            In this theme, you get a project ID of walletconnect and you can use
+            it. But if we delete this project from walletconnect, theme will not
+            be working. So, you have to create your own walletconnect project.
+            So, firstly you have to go
+            <a href="https://cloud.walletconnect.com/" target="_blank">
+              walletconnect
+            </a>
+            and create an account. If you have an account in walletconnect you
+            have to sign in.
+          </h4>
+          <p>Create a project on walletconnect cloud</p>
+          <img
+            src="./assets/images/screenshot/create-new-project-walletconnect.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <p>After creating a new project, you have to copy Project ID</p>
+          <img
+            src="./assets/images/screenshot/copy-project-id.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <p>Finaly, you have to paste Project ID into theme.</p>
+          <img
+            src="./assets/images/screenshot/paste-projectid-to-theme.png"
+            alt="image"
+            class="ss-img"
+          />
+        </section>
+
+        <section id="pages" class="ptb-50">
+          <div class="section-title">
+            <h2>Folder Structure</h2>
+          </div>
+
+          <h3>React js version folder structure</h3>
+          <img
+            src="./assets/images/screenshot/react-folder-structure.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <h3 class="bb ptb-10 mb-20">
+            React js version folder structure overview
+          </h3>
+
+          <div class="mb-30">
+            <h3>src/main.jsx</h3>
+            <p>
+              <code>src/main.jsx</code> main file contains the root of the app.
+            </p>
+          </div>
+
+          <div class="mb-30">
+            <h3>src/App.jsx</h3>
+            <p>
+              <code>src/App.jsx</code> App file contains the routing of the app.
+            </p>
+          </div>
+
+          <div class="mb-30">
+            <h3>src/Rainbowkit.jsx</h3>
+            <p>
+              <code>src/Rainbowkit.jsx</code> Rainbowkit file contains the
+              rainbowkit provider configuration. You can customize rainbowkit
+              provider, you can also update chains, connector wallets.
+            </p>
+            <h4>
+              If you want to learn more/basics about rainbowkit please visit
+              rainbowkit's official website here:
+              <a href="https://www.rainbowkit.com/" target="_blank"
+                >Rainbowkit</a
+              >
+            </h4>
+          </div>
+
+          <div class="mb-30">
+            <h3>src/Layout.jsx</h3>
+            <p>
+              <code>src/Layout.jsx</code> Layout file contains the layout of
+              page.
+            </p>
+          </div>
+
+          <div class="mb-30">
+            <h3>src/assets</h3>
+            <p>
+              <code>src/assets</code> In assets folder, you will find the data,
+              images and styles folder. In data folder, you will find all of
+              data uses in this template. You will also find the image folder,
+              where all of the images are kept on the basis of the specific
+              page. In pdf folder, you will find a sample whitepaper pdf. In
+              styles folder, you will find global styles and theme styles writen
+              with styled-components.
+            </p>
+            <ul class="steps-list">
+              <li>data</li>
+              <li>images</li>
+              <li>pdf</li>
+              <li>styles</li>
+            </ul>
+          </div>
+          <div class="mb-30">
+            <h3>src/components</h3>
+            <p>
+              <code>/components</code> folder is most importantly use, you will
+              find components
+            </p>
+            <img
+              src="./assets/images/screenshot/folder-components.png"
+              alt="image"
+              class="ss-img"
+            />
+          </div>
+          <div class="mb-30">
+            <h3>src/section</h3>
+            <p>
+              <code>src/section</code> Here all the section include that’s we
+              are used in our template like banner
+            </p>
+            <img
+              src="./assets/images/screenshot/folder-section.png"
+              alt="image"
+              class="ss-img"
+            />
+          </div>
+          <div class="mb-30">
+            <h3>src/pages</h3>
+            <p>
+              <code>src/pages</code>
+              In pages folder you will find the all pages
+            </p>
+
+            <img
+              src="./assets/images/screenshot/home-pages.png"
+              alt="image"
+              class="ss-img"
+            />
+          </div>
+          <div class="mb-30">
+            <h3>src/contracts</h3>
+            <p>
+              <code>src/contracts</code> folder is most importantly use for
+              interacting with smart contracts.
+            </p>
+            <img
+              src="./assets/images/screenshot/folder-contracts-2.png"
+              alt="image"
+              class="ss-img"
+            />
+          </div>
+          <div>
+            <h3>src/utils</h3>
+            <p>
+              <code>src/utils</code> folder is most importantly use for
+              interacting with smart contracts as well as context provider.
+            </p>
+            <img
+              src="./assets/images/screenshot/utils-folder.png"
+              alt="image"
+              class="ss-img"
+            />
+          </div>
+        </section>
+
+        <section id="font" class="ptb-50">
+          <div class="section-title">
+            <h2>Fonts</h2>
+          </div>
+
+          <div class="view-card">
+            <p>font-family: 'Inter', sans-serif;</p>
+            <p>font-family: 'Outfit', sans-serif;</p>
+            <p>font-family: 'Orbitron', sans-serif;</p>
+            <p>font-family: 'Kufam', sans-serif;</p>
+            <p>font-family: 'Bebas Neue', sans-serif;</p>
+          </div>
+        </section>
+
+        <section id="theme-styles" class="ptb-50">
+          <div class="section-title">
+            <h2>Theme Styles</h2>
+          </div>
+
+          <div class="view-card mb-30">
+            <p>
+              <code>src/assets/styles/ThemeStyles.jsx</code> themestyles file
+              contains all fonts, colors declared here.
+            </p>
+            <p>You can control all fonts, colors of this app from this file.</p>
+          </div>
+
+          <h4>
+            You can add new font, color in ThemeStyles.jsx file. You can also
+            update all fonts, colors from this file.
+          </h4>
+          <img
+            src="./assets/images/screenshot/update-theme-styles.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <h4>
+            You can call any font, color from ThemeStyles.jsx file when you
+            needed.
+          </h4>
+          <img
+            src="./assets/images/screenshot/call-all-var-themestyles.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <h4>
+            If you want to learn more about theming with styled-components,
+            please visit their official website:
+            <a
+              href="https://styled-components.com/docs/advanced"
+              target="_blank"
+            >
+              Theming styled-compontens
+            </a>
+          </h4>
+        </section>
+
+        <section id="web3-settings" class="ptb-50">
+          <div class="section-title">
+            <h2>Web3 settings</h2>
+          </div>
+
+          <div class="view-card mb-30">
+            <h4>
+              If you want to customize this theme, you have to knowlege about:
+            </h4>
+            <ul class="steps-list">
+              <li>ERC-20 token standard</li>
+              <li>Token smart contract</li>
+              <li>Presale smart contract</li>
+              <li>
+                Create, compile, deyploy any smart contract using
+                <a href="https://remix.ethereum.org/" target="_blank">
+                  Remix IDE
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.rainbowkit.com/docs/introduction"
+                  target="_blank"
+                >
+                  rainbowkit connect wallet
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wagmi.sh/react/getting-started"
+                  target="_blank"
+                >
+                  wagmi
+                </a>
+              </li>
+              <li>
+                How to interact with smart contract using wagmi react hooks
+              </li>
+            </ul>
+          </div>
+
+          <h4>
+            You will get token smart contract, presale token smart contract. So,
+            you can create token contract and presale contract for your own
+            custom token.
+          </h4>
+          <img
+            src="./assets/images/screenshot/folder-contracts.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <h3 class="mb-20">
+            You can watch <a href="#video-tutorial">video tutorial</a> for
+            following steps.
+          </h3>
+
+          <h4>Create contract files using Remix IDE.</h4>
+          <p>
+            Firstly, you have to go using web browser to
+            <a href="https://remix.ethereum.org/" target="_blank">
+              https://remix.ethereum.org/
+            </a>
+            . Create new files. Copy token contract and presale contract from
+            provided folder and paste it on new created files in remix IDE.
+          </p>
+          <img
+            src="./assets/images/screenshot/create-token-contract.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <h4>Compile contract</h4>
+          <p>
+            You have to compile contract before deploying it. Go to compiler tab
+            section. Select the latest compiler version.
+          </p>
+          <img
+            src="./assets/images/screenshot/set-latest-compiler.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <p>Click over Compile button. Then, Contract will be compiled.</p>
+          <p>
+            You have to keep abi json for interacting with smart contract using
+            react app.
+          </p>
+          <img
+            src="./assets/images/screenshot/compiled-contract.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <h4>Deploy Contract</h4>
+          <p>
+            Go to Deploy tab section. Select injected provider metamask for
+            connecting metamask wallet into remix IDE.
+          </p>
+          <img
+            src="./assets/images/screenshot/select-injected-provider.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <p>
+            You have to select desired network for deploying contract. You can
+            select any network from avalable list.
+          </p>
+          <img
+            src="./assets/images/screenshot/select-any-network.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <h4>Deploy token smart contract.</h4>
+          <p>
+            Click over Deploy button. Then, you have to click over Confirm
+            button in metamask popup.
+          </p>
+          <img
+            src="./assets/images/screenshot/deploy-confirm.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <h4>Customize presale smart contract before deploying</h4>
+          <p>
+            You have to customize provided presale smart contract file before
+            deploying on blockchain. You can add presale token limit inside
+            presale contract.
+          </p>
+
+          <img
+            src="./assets/images/screenshot/presale-token-amount-set.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <p>
+            You can add stage information before deploying presale contract. To
+            add stage information just follow the following image.
+          </p>
+          <img
+            src="./assets/images/screenshot/stage-before-deploying.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <h4>Deploy presale smart contract</h4>
+          <p>
+            You have to set payment address, token address, price feed address
+            before deploying presale smart contract.
+          </p>
+          <p>
+            In _payment field, paste payment address(token purchased price goes
+            to payment address directly).
+          </p>
+          <p>In _token field, paste token contract address.</p>
+          <p>
+            In _pricefeed field, paste price feed address(use following address
+            or contact with us).
+          </p>
+          <p>Sepolia Testnet: 0x694AA1769357215DE4FAC081bf1f309aDC325306</p>
+          <p>BNB Testnet: 0x2514895c72f50D8bd4B4F9b1110F0D6bD2c97526</p>
+          <p>Ethereum Mainnet: 0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419</p>
+          <p>BNB Mainnet: 0x0567F2323251f0Aab15c8dFb1967E4e8A7D42aeE</p>
+          <p>
+            to getting price feed contract address of all networks just visit
+            <a
+              href="https://docs.chain.link/data-feeds/price-feeds/addresses?network=ethereum&page=1"
+              target="_blank"
+            >
+              price feed contract addresses
+            </a>
+          </p>
+          <img
+            src="./assets/images/screenshot/deploy-presale.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <h4>Transfer token for presale contract</h4>
+          <p>
+            You can give some tokens to presale contract for selling. There are
+            two ways you can do it. You can mint some tokens for presale or can
+            transfer some tokens to presale. So, you can execute mint or
+            transfer.
+          </p>
+          <p>
+            You have to do this step inside token contract. Click transfer
+            function.
+            <br />
+            Inside "to" field, paste presale token contract address.
+            <br />
+            Inside "amount" field, paste token amount(wei format) to transfer.
+            <br />
+            Then have to click over transact button. Finaly, click over Confirm
+            button in metamask popup. Then token amount will be transfered for
+            presale contract.
+          </p>
+          <img
+            src="./assets/images/screenshot/token-transfer-steps.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <p>
+            You can use another step for transfering token also inside token
+            contract. Click mint function.
+            <br />
+            Inside "to" field, paste presale token contract address.
+            <br />
+            Inside "amount" field, paste token amount(wei format) to transfer.
+            <br />
+            Then have to click over transact button. Finaly, click over Confirm
+            button in metamask popup. Then token amount will be minted for
+            presale contract.
+          </p>
+          <img
+            src="./assets/images/screenshot/token-mint-steps.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <h4>Add stage information in presale contract</h4>
+          <p>
+            You can add more stage information following this steps.
+            <br />
+            You have to fill stage information properly, then click over
+            transact button. Finaly, click over Confirm button in metamask
+            popup. Repeat this step to add more stage in presale contract.
+          </p>
+          <p>In _bonus field, paste bonus amount between 0 to 100.</p>
+          <img
+            src="./assets/images/screenshot/add-stage-presale-contract.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <p>
+            In _price field, paste price amount(wei format) for 1 token. eg. if
+            you would like to set 1 token = 0.001 USD, so you have to paste
+            1000000000000000(wei format for 0.001) inside _price field.
+          </p>
+          <img
+            src="./assets/images/screenshot/eth-to-wei-converter.png"
+            alt="image"
+            class="ss-img"
+          />
+          <p>In _start field, paste start time(unix timestamp).</p>
+          <p>In _end field, paste end time(unix timestamp).</p>
+          <img
+            src="./assets/images/screenshot/timestamps.png"
+            alt="image"
+            class="ss-img"
+          />
+        </section>
+
+        <section id="video-tutorial" class="ptb-50">
+          <div class="section-title">
+            <h2>Video Tutorial</h2>
+          </div>
+
+          <h4 class="mb-20">
+            You can watch video tutorial for above steps. You can clearly
+            understand above steps and can create, deploy, verify your own
+            custom token contract and presale token contract.
+          </h4>
+          <h3 class="fw-400 mb-20">
+            How to deploy and verify token smart contract
+          </h3>
+          <iframe
+            class="video-item mb-20"
+            src="https://www.youtube.com/embed/a2aDoSmfSoI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
+            allowfullscreen
+          >
+          </iframe>
+
+          <h3 class="fw-400 mb-20">
+            How to deploy and verify presale token smart contract
+          </h3>
+          <iframe
+            class="video-item mb-20"
+            src="https://www.youtube.com/embed/GU56T_DqJYI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
+            allowfullscreen
+          >
+          </iframe>
+        </section>
+
+        <section id="contract-config" class="ptb-50">
+          <div class="section-title">
+            <h2>Contract Configuration</h2>
+          </div>
+
+          <h4 class="mb-20">
+            You can watch
+            <a href="#contract-config-video">video instruction</a>
+            for interacting with smart contract using this template.
+          </h4>
+
+          <h4>Add contract in react app</h4>
+          <p>
+            Go to "config.js" file. Paste token contract address for
+            "tokenContractAddress" variable. Paste presale token contract
+            address for "presaleContractAddress" variable.
+          </p>
+          <img
+            src="./assets/images/screenshot/paste-contract-address.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <h4>Add ABI json of contracts</h4>
+          <p>
+            You have already deployed token contract and presale token contract.
+            So, you have kept abi json of those contracts. Now you have to add
+            abi json into react app. Go to "TokenContractAbi.json" and paste
+            token contract abi json. Go to "PresaleContractAbi.json" and paste
+            token contract abi json.
+          </p>
+          <img
+            src="./assets/images/screenshot/paste-contract-abi-json.jpg"
+            alt="image"
+            class="ss-img"
+          />
+
+          <h4>Import ABI json file</h4>
+          <p>
+            Go to "config.js" file. Import "TokenContractAbi.json" and
+            "PresaleContractAbi.json" file.
+          </p>
+          <img
+            src="./assets/images/screenshot/import-contract-abi.jpg"
+            alt="image"
+            class="ss-img"
+          />
+
+          <h4>Interacting with smart contract</h4>
+          <p>Go to "config.js" file.</p>
+          <p>
+            If you want to customize according to own requirement, you will do
+            it . For this you have to use
+            <a href="https://wagmi.sh/" target="_blank">wagmi</a>. Using it you
+            can customize interation(read, write contract) with this theme.
+          </p>
+          <img
+            src="./assets/images/screenshot/variable-name-call.png"
+            alt="image"
+            class="ss-img"
+          />
+
+          <p>
+            go to "src/utils/PresaleContextProvider.jsx" file. Then you can
+            understand the interaction of read and write contract function.
+            <br />
+            For interacting with smart contract you must have to knowledge about
+            <a href="https://wagmi.sh/" target="_blank">wagmi</a>. So, you can
+            understand and write code according to your custom requirement
+            inside "src/utils/PresaleContextProvider.jsx" file.
+          </p>
+          <img
+            src="./assets/images/screenshot/presale-provider.png"
+            alt="image"
+            class="ss-img"
+          />
+        </section>
+
+        <section id="deploy" class="ptb-50">
+          <div class="section-title">
+            <h2>Deploy</h2>
+          </div>
+
+          <h2 class="mb-20">Gittu react version Deploy</h2>
+
+          <h3 class="bb ptb-10 mb-20">Gittu React js static build</h3>
+          <ul class="steps-list mb-30">
+            <li>Navigate to gittu_react_main</li>
+            <li>
+              You can type path url inside "vite-config.js" file. If you are
+              deploying gittu react app to server you can type domain/custom
+              path url inside base in "vite-config.js" file.
+              <img
+                class="ss-img"
+                src="./assets/images/screenshot/set-base-vite-config.png"
+                alt="ss-img"
+              />
+            </li>
+            <li>run command <code>npm run build</code></li>
+            <li>
+              after the build is done you will get a folder called
+              <code>dist</code>.
+            </li>
+            <li>
+              now you can host that folder anywhere you want (If you are
+              deploying gittu react app to server, you have to type
+              domain/custom path url inside base in "vite-config.js" file before
+              build).
+            </li>
+            <li>
+              For more information you can visit
+              <a
+                href="https://v2.vitejs.dev/guide/static-deploy.html"
+                target="_blank"
+              >
+                Deploying a Static Site
+              </a>
+            </li>
+          </ul>
+
+          <h3 class="bb ptb-10 mt-20 mb-20">
+            <a href="https://www.netlify.com/" target="_blank">netlify</a>
+          </h3>
+          <ul class="steps-list mb-30">
+            <li>Navigate to gittu_react_main</li>
+            <li>run command:</li>
+            <li>
+              <code>npm run build</code>
+              <p>
+                after the build process is done. you will find a new folder
+                called <code>/dist</code>
+              </p>
+            </li>
+            <li><code>npm install netlify-cli --save-dev</code></li>
+            <li>
+              <code>netlify login</code>
+              <p>after the login process is done</p>
+            </li>
+            <li>run command: <code>netlify deploy</code></li>
+            <li>choose + Create & configure a new site</li>
+            <li>give you site name</li>
+            <li>
+              path to deploy: <code>./dist</code>
+              <p>after the build process once done, run command:</p>
+            </li>
+            <li><code>netlify deploy --prod </code></li>
+            <li>path to deploy: <code>./dist</code></li>
+            <li>
+              for more information:
+              <a
+                href="https://www.netlify.com/blog/2016/07/22/deploy-react-apps-in-less-than-30-seconds/"
+                target="_blank"
+              >
+                How to deploy React Apps in netlify
+              </a>
+            </li>
+          </ul>
+          <p>
+            You will find react.js app deployment complete guide here:
+            <a
+              href="https://create-react-app.dev/docs/deployment/"
+              target="_blank"
+            >
+              React.js app Deployment</a
+            >
+          </p>
+
+          <h3 class="bb ptb-10 mt-20 mb-20">
+            <a href="https://vercel.com/" target="_blank">vercel</a>
+          </h3>
+          <ul class="steps-list mb-30">
+            <li>
+              Navigate to gittu_react_main
+              <p>
+                for deploying to vercel using terminal you need to install
+                vercel-cli on your machine
+                <a href="https://vercel.com/docs/cli" target="_blank">
+                  Read more...
+                </a>
+              </p>
+            </li>
+            <li><code>npm install vercel --save-dev</code></li>
+            <li>run command:</li>
+            <li><code>vercel login</code></li>
+            <p>After the login process is done. run command:</p>
+            <li><code>vercel</code></li>
+            <p>
+              after the deploy process is done. then deploy the production
+              version
+            </p>
+            <li><code>vercel --prod</code></li>
+          </ul>
+
+          <p>
+            For more information
+            <a
+              href="https://vercel.com/guides/deploying-react-with-vercel"
+              target="_blank"
+            >
+              How to Deploy a React.js Site with Vercel
+            </a>
+          </p>
+        </section>
+
+        <section id="custom-page" class="ptb-50">
+          <div class="section-title">
+            <h2>Custom Page</h2>
+          </div>
+
+          <h4>
+            Sometimes, if you want to show only one page, you have to do some
+            steps. Firstly, you have to remove other routes. You have to set
+            your desired page inside element of default route.
+          </h4>
+          <img
+            class="ss-img"
+            src="./assets/images/screenshot/set-one-route.png"
+            alt="image"
+          />
+
+          <h4>
+            In our template, all page links dropdown exists in header. And you
+            can update dropdown demo menu list from here.
+          </h4>
+          <img
+            class="ss-img"
+            src="./assets/images/screenshot/demo-menu-list.png"
+            alt="image"
+          />
+        </section>
+
+        <section id="credit" class="ptb-50">
+          <div class="section-title">
+            <h2>Source and Credit</h2>
+          </div>
+
+          <ul class="steps-list mb-30">
+            <li><code>Bootstrap</code></li>
+            <li><code>react</code></li>
+            <li><code>react-dom</code></li>
+            <li><code>react-router-dom</code></li>
+            <li><code>react-helmet-async</code></li>
+            <li><code>react-icons</code></li>
+            <li><code>styled-components</code></li>
+            <li><code>react-slick</code></li>
+            <li><code>slick-carousel</code></li>
+            <li><code>@rainbow-me/rainbowkit</code></li>
+            <li><code>@tanstack/react-query</code></li>
+            <li><code>viem</code></li>
+            <li><code>wagmi</code></li>
+          </ul>
+
+          <h2 class="bb ptb-20 mb-20">Images</h2>
+
+          <ul class="steps-list">
+            <li>
+              <a href="https://photodune.net/" target="_blank">Photodune</a>
+            </li>
+            <li>
+              <a href="http://allfreephotos.net" target="_blank"
+                >Allfreephotos</a
+              >
+            </li>
+            <li><a href="https://pixabay.com/" target="_blank">Pixabay</a></li>
+            <li>
+              <a href="https://www.pexels.com/" target="_blank">Pexels</a>
+            </li>
+            <li><a href="http://unsplash.com/" target="_blank">Unsplash</a></li>
+            <li>
+              <a href="https://www.fotolia.com" target="_blank">Fotolia</a>
+            </li>
+          </ul>
+          <p>
+            Note: All images are just used for Preview Purpose Only. They are
+            not part of the theme and NOT included in the final purchase files.
+          </p>
+        </section>
+
+        <footer class="footer-section pb-20">
+          <p>Copyright uigigs &copy;2024</p>
+        </footer>
+      </div>
+    </div>
+    <!-- main wrapper section end -->
+
+    <!-- All javascript links -->
+    <!-- jQuery v3.6.3 js -->
+    <script src="./assets/js/jquery-3.7.0.min.js"></script>
+    <!-- Single Page Nav Plugin version 1.2.1 -->
+    <script src="./assets/js/jquery.singlePageNav.min.js"></script>
+    <!-- custom js -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
